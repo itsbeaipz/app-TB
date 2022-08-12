@@ -35,11 +35,12 @@ def main():
     if selecao=="Guia do aplicativo": 
         st.markdown("O modo de usar esse aplicativo é bem simples!")
         
-        st.markdown("""Essa é a tela inicial. 
-            
-            Aqui você encontra um resumo do projeto e a equipe executora!
-
-            Na região **indicada pela seta**, você pode navegar pelas páginas do app.""")
+        st.markdown("""Essa é a tela inicial. """)
+        
+        st.markdown("""Aqui você encontra um resumo do projeto e a equipe executora!""") 
+        
+        st.markdown("""Na região **indicada pela seta**, você pode navegar pelas páginas do app.""")   
+        
         st.image('primeira_tela.png')
 
         st.markdown("""Na página \"Análises da Tuberculose\", você pode **selecionar (ou digitar) o nome de um município do Paraná**.""")
