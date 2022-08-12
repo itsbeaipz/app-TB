@@ -33,15 +33,20 @@ def main():
         st.subheader("Equipe executora")
         st.markdown("**Beatriz Ignácio Pinel**, João Vitor Perez de Souza e Rosilene Fressatti Cardoso ")
     if selecao=="Guia do aplicativo": 
-        st.text("O modo de usar esse aplicativo é bem simples!")
+        st.markdown("O modo de usar esse aplicativo é bem simples!")
         
-        st.markdown("""Essa é a tela inicial. Aqui você encontra um resumo do projeto e a equipe executora!
-            Na região indicada pela seta, você pode navegar pelas páginas do app.""")
+        st.markdown("""Essa é a tela inicial. \n
+            
+            Aqui você encontra um resumo do projeto e a equipe executora!
+            \n
+            Na região **indicada pela seta**, você pode navegar pelas páginas do app.""")
         st.image('primeira_tela.png')
 
-        st.markdown("""Na página \"Análises da Tuberculose\", você pode selecionar (ou digitar) o nome de um município do Paraná.
+        st.markdown("""Na página \"Análises da Tuberculose\", você pode **selecionar (ou digitar) o nome de um município do Paraná**.
+        \n
         Ao selecionar o nome, você poderá ver um resumo da Incidência e número de casos de TB registrado!
-        Outra opção é que você pode também baixar os gráficos ao clicar no botão indicado!""")
+        \n
+        Outra opção é que você pode também baixar os gráficos ao clicar no **botão indicado!**""")
         st.image('terceira_tela.png')
 
         st.markdown("""Na página \"Contato\", você encontra as informações da equipe executora desse projeto.
