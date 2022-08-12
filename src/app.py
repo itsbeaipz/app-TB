@@ -42,15 +42,19 @@ def main():
             Na região **indicada pela seta**, você pode navegar pelas páginas do app.""")
         st.image('primeira_tela.png')
 
-        st.markdown("""Na página \"Análises da Tuberculose\", você pode **selecionar (ou digitar) o nome de um município do Paraná**.
+        st.markdown("""Na página \"Análises da Tuberculose\", você pode **selecionar (ou digitar) o nome de um município do Paraná**.""")
+        
+        st.markdown("""Ao selecionar o nome, você poderá ver um resumo da Incidência e número de casos de TB registrado!""")
+        
 
-        Ao selecionar o nome, você poderá ver um resumo da Incidência e número de casos de TB registrado!
-
-        Outra opção é que você pode também baixar os gráficos ao clicar no **botão indicado!**""")
+        st.markdown("""Outra opção é que você pode também baixar os gráficos ao clicar no **botão indicado!**""")
+        
         st.image('terceira_tela.png')
 
-        st.markdown("""Na página \"Contato\", você encontra as informações da equipe executora desse projeto.
-            Se você gostou e quer saber mais, entre em contato com a gente!""")
+        st.markdown("""Na página \"Contato\", você encontra as informações da equipe executora desse projeto.""")
+        
+        st.markdown("""Se você gostou e quer saber mais, entre em contato com a gente!""")    
+        
         st.image('quarta_tela.png')
 
 
