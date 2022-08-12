@@ -14,7 +14,7 @@ def main():
     "Selecione a opção:",
     ("Página inicial", "Guia do aplicativo", "Análises da Tuberculose", "Contato"))
     if selecao!="Contato":
-        st.title("Situação da Tuberculose no Paraná de 2001 a 2020")
+        st.title("Situação da Tuberculose no Paraná de 2001 a 2021")
 
     url="incidencia_tb_mun.csv"
     dados=pd.read_csv(url)
@@ -33,8 +33,20 @@ def main():
         st.subheader("Equipe executora")
         st.markdown("**Beatriz Ignácio Pinel**, João Vitor Perez de Souza e Rosilene Fressatti Cardoso ")
     if selecao=="Guia do aplicativo": 
-        st.text("kkkabc")
+        st.text("O modo de usar esse aplicativo é bem simples!")
+        
+        st.markdown("""Essa é a tela inicial. Aqui você encontra um resumo do projeto e a equipe executora!
+            Na região indicada pela seta, você pode navegar pelas páginas do app.""")
+        st.image('primeira_tela.png')
 
+        st.markdown("""Na página \"Análises da Tuberculose\", você pode selecionar (ou digitar) o nome de um município do Paraná.
+        Ao selecionar o nome, você poderá ver um resumo da Incidência e número de casos de TB registrado!
+        Outra opção é que você pode também baixar os gráficos ao clicar no botão indicado!""")
+        st.image('terceira_tela.png')
+
+        st.markdown("""Na página \"Contato\", você encontra as informações da equipe executora desse projeto.
+            Se você gostou e quer saber mais, entre em contato com a gente!""")
+        st.image('quarta_tela.png')
 
 
     if selecao=="Análises da Tuberculose": 
@@ -59,7 +71,7 @@ def main():
             ax[1].set_xticklabels(banco["NU_ANO"].astype(str),rotation=90);
             ax[1].set_ylabel("Número", fontsize=13)
             ax[1].set_title("Casos absolutos de TB", fontsize=15)
-            fig.suptitle(f'Panorama da Tuberculose em {municipio} de 2001 à 2020',fontsize=18,y=-0.2)
+            fig.suptitle(f'Panorama da Tuberculose em {municipio} de 2001 à 2021',fontsize=18,y=-0.2)
             fig.savefig('Gráfico.png', dpi=300, bbox_inches="tight")
             return fig
 
