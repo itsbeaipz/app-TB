@@ -33,7 +33,7 @@ def main():
         st.subheader("Equipe executora")
         st.markdown("**Beatriz Ignácio Pinel**, João Vitor Perez de Souza e Rosilene Fressatti Cardoso ")
     if selecao=="Guia do aplicativo": 
-        st.text("kkk")
+        st.text("kkkabc")
 
 
 
